@@ -105,4 +105,12 @@ header {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
+}
+
+.hero {
+  background-color: var(--header-bg-color);
+}
+
+.hero-info {
+  display: none;
 }/*# sourceMappingURL=main.css.map */
