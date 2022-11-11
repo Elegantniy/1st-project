@@ -31,4 +31,71 @@ ol {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: "DM Sans";
+  font-weight: 500;
+  font-size: 16px;
+  font-style: normal;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: rgb(255, 184, 202);
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  padding: 37px 16px 0 16px;
+  align-items: center;
+}
+
+.header-logo-link {
+  margin-right: 128px;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.site-nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  margin-right: 141px;
+  gap: 35px;
+}
+
+.site-nav-item {
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+}
+.site-nav-item.current {
+  color: #d41443;
+}
+
+.header-button {
+  background-color: white;
+  border-style: none;
+  border-radius: 22px;
+  width: 159px;
+  height: 44px;
+  color: #d41443;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
 }/*# sourceMappingURL=main.css.map */
