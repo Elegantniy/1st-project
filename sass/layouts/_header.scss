@@ -1,5 +1,5 @@
 header {
-  background-color: rgba(255, 184, 202, 1);
+  background-color: var(--header-bg-color);
 }
 .nav {
   display: flex;
@@ -27,21 +27,21 @@ header {
   gap: 35px;
 }
 .site-nav-item {
-  color: white;
+  color: var(--white-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
   &.current {
-    color: #d41443;
+    color: var(--red-text-color);
   }
 }
 .header-button {
-  background-color: white;
+  background-color: var(--white-color);
   border-style: none;
   border-radius: 22px;
   width: 159px;
   height: 44px;
-  color: #d41443;
+  color: var(--red-text-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;

@@ -12,6 +12,13 @@
   margin: -1px;
 }
 
+:root {
+  --red-text-color: #d41443;
+  --white-color: #fff;
+  --black-color: #000;
+  --header-bg-color:rgba(255, 184, 202, 1);
+}
+
 button {
   cursor: pointer;
 }
@@ -47,7 +54,7 @@ body {
 }
 
 header {
-  background-color: rgb(255, 184, 202);
+  background-color: var(--header-bg-color);
 }
 
 .nav {
@@ -79,22 +86,22 @@ header {
 }
 
 .site-nav-item {
-  color: white;
+  color: var(--white-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
 }
 .site-nav-item.current {
-  color: #d41443;
+  color: var(--red-text-color);
 }
 
 .header-button {
-  background-color: white;
+  background-color: var(--white-color);
   border-style: none;
   border-radius: 22px;
   width: 159px;
   height: 44px;
-  color: #d41443;
+  color: var(--red-text-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
