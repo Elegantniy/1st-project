@@ -68,29 +68,27 @@
                 class="menu-close"
                 aria-label="Перемикач мобільного меню"
               >
-                <use
-                  href="./images/header/symbol-defs.svg#icon-close"
-                ></use>
+                <use href="./images/header/symbol-defs.svg#icon-close"></use>
               </svg>
             </button>
             <button type="button" class="menu-buy-button">Buy now ></button>
             <ul class="menu-nav-list">
-            <li class="menu-nav-item current">
-              <a href="" class="menu-nav-link">Home</a>
-            </li>
-            <li class="menu-nav-item">
-              <a href="" class="menu-nav-link">About us</a>
-            </li>
-            <li class="menu-nav-item">
-              <a href="" class="menu-nav-link">How it's made?</a>
-            </li>
-            <li class="menu-nav-item">
-              <a href="" class="menu-nav-link">Our products</a>
-            </li>
-            <li class="menu-nav-item">
-              <a href="" class="menu-nav-link">Contact</a>
-            </li>
-          </ul>
+              <li class="menu-nav-item current">
+                <a href="" class="menu-nav-link">Home</a>
+              </li>
+              <li class="menu-nav-item">
+                <a href="" class="menu-nav-link">About us</a>
+              </li>
+              <li class="menu-nav-item">
+                <a href="" class="menu-nav-link">How it's made?</a>
+              </li>
+              <li class="menu-nav-item">
+                <a href="" class="menu-nav-link">Our products</a>
+              </li>
+              <li class="menu-nav-item">
+                <a href="" class="menu-nav-link">Contact</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -106,20 +104,35 @@
               <li>23 food trucks</li>
             </ul>
           </div>
-          <div>
-            <h1>Ice cream made with passion</h1>
-            <ul>
-              <li><a href="">Products</a></li>
-              <li><a href="">How it's made</a></li>
+          <div class="hero-main-info">
+            <h1 class="hero-title">
+              Ice cream made with <span class="hero-title-span">passion</span>
+            </h1>
+            <ul class="hero-list">
+              <li class="hero-item products">
+                <a href="#products" class="hero-item-link products">Products</a>
+              </li>
+              <li class="hero-item how">
+                <a href="#how it's made" class="hero-item-link how">How it's made</a>
+              </li>
             </ul>
-            <div>
+            <div class="icecream-bg">
+              <img
+                src="./images/hero/icecream.png"
+                alt="IceCream photo"
+                class="hero-icecream"
+                width="171"
+                height="410"
+              />
+            </div>
+            <div class="hero-add-info">
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Sapiente aspernatur non voluptate dignissimos, illo ducimus
                 eveniet!
               </p>
               <!-- arrow -->
-              <a href="">
+              <a href="" class="arrow">
                 <svg>
                   <use></use>
                 </svg>
@@ -129,7 +142,7 @@
         </div>
       </section>
       <!-- Products -->
-      <section class="section">
+      <section class="section" id="products">
         <h2><p>100% natural products</p></h2>
         <div class="container">
           <ul>
@@ -173,7 +186,7 @@
         </div>
       </section>
       <!-- about -->
-      <section class="section">
+      <section class="section" id="how it's made">
         <p>Tradition and love</p>
         <h2>how it’s made?</h2>
         <div class="container">
