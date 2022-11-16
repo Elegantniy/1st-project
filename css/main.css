@@ -13,6 +13,12 @@
   margin: -1px;
 }
 
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
 :root {
   --red-text-color: #d41443;
   --white-color: #fff;
@@ -22,6 +28,8 @@
   --pink-color: #ffa5ba;
   --background: #fff5f6;
   --dark-pink-color: #907e82;
+  --menu-bg: #E17992;
+  --menu-border: #E18298;
 }
 
 html {
@@ -91,19 +99,13 @@ body {
 }
 
 .container {
-  width: 1200px;
-  padding: 0 16px;
-  margin: 0 auto;
-}
-
-.container {
   width: 100%;
   padding: 0 40px 0 40px;
   margin: 0 auto;
 }
 @media screen and (min-width: 480px) {
   .container {
-    width: 320px;
+    width: 100%;
     padding: 0 20px 0 20px;
   }
 }
@@ -120,8 +122,12 @@ body {
   }
 }
 
-header {
+.header {
   background-color: var(--header-bg-color);
+}
+.header > .container {
+  padding: 6px 20px 0px 20px;
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -134,14 +140,15 @@ header {
 }
 
 .header-logo-link {
-  margin-right: 128px;
+  margin-right: 61px;
+  margin-top: 8px;
 }
 
 .site-nav {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -184,6 +191,85 @@ header {
     font-size: 16px;
     line-height: 1.31;
   }
+}
+
+.menu-button {
+  background-color: transparent;
+  border-style: none;
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
+
+.mobile-menu {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--menu-bg);
+  top: 0;
+  z-index: 999;
+  transform: translateX(120%);
+  transition: transform 250ms ease-in-out;
+}
+.mobile-menu > .container {
+  padding: 60px 20px 0 20px;
+}
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
+.mobile-menu.is-open {
+  transform: translateX(0);
+}
+
+.menu-nav {
+  text-align: center;
+}
+
+.menu-buy-button {
+  background-color: var(--white-color);
+  width: 209px;
+  height: 44px;
+  border-style: none;
+  border-radius: 22px;
+}
+
+.menu-nav-list {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  width: 100%;
+}
+
+.menu-nav-item {
+  padding-top: 13px;
+  padding-bottom: 11px;
+  border-top: 1px solid var(--menu-border);
+  border-bottom: 1px solid var(--menu-border);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.28;
+  color: var(--white-color);
+}
+.menu-nav-item.current {
+  color: var(--red-text-color);
+}
+
+.menu-button {
+  width: 20px;
+  height: 14px;
+}
+.menu-button.js-close-menu {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  top: 30px;
+  right: 25px;
 }
 
 .hero {
