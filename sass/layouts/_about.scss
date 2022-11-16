@@ -1,0 +1,43 @@
+.about {
+  width: 100%;
+  background-color: var(--background);
+  > .container {
+    padding: 0 20px;
+  }
+}
+.about-text {
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.16;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 60px;
+  padding-bottom: 15px;
+  color: var(--pink-color);
+  width: 198px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.about-title {
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  width: 200px;
+  color: var(--accent-color);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+}
+.about-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 220px;
+}
