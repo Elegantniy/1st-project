@@ -19,7 +19,7 @@
   </head>
   <body>
     <!-- header -->
-    <header class="header">
+    <header class="header" id="header">
       <div class="nav container">
         <nav class="site-nav">
           <a href="./index.html" class="header-logo-link">
@@ -98,6 +98,11 @@
       <!-- Hero -->
       <section class="hero section">
         <div class="container">
+          <a href="#header" class="back-button">
+            <svg width="20" height="20" class="arrow-up">
+              <use href="./images/header/symbol-defs.svg#icon-arrow-up"></use>
+            </svg>
+          </a>
           <div class="hero-info">
             <ul>
               <li>16 cafes</li>
@@ -113,7 +118,9 @@
                 <a href="#products" class="hero-item-link products">Products</a>
               </li>
               <li class="hero-item how">
-                <a href="#how it's made" class="hero-item-link how">How it's made</a>
+                <a href="#how it's made" class="hero-item-link how"
+                  >How it's made</a
+                >
               </li>
             </ul>
             <div class="icecream-bg">
