@@ -1,7 +1,13 @@
 @import './utils/mixin';
 @import './utils/hidden';
 @import './utils/variables';
+
 @import './base/reset';
 @import './base/common';
+
+@import './components/container';
+
+
 @import './layouts/header';
 @import './layouts/hero';
+@import './layouts/footer';

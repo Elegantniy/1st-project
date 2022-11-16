@@ -1,0 +1,151 @@
+.footer {
+  background-color: var(--background);
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  > .container {
+    padding: 40px 20px 0 20px;
+    @include tablet {
+      padding: 40px 16px 0 16px;
+    }
+    @include desktop {
+      padding: 120px 16px 0 16px;
+    }
+  }
+}
+
+.footer-info {
+  @include tablet {
+    display: flex;
+    // gap: 128px;
+    // width: calc((100% - 128px) / 2);
+  }
+}
+.footer-text {
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.16;
+  text-transform: uppercase;
+  color: var(--pink-color);
+  width: 232px;
+  margin-right: auto;
+  margin-bottom: 16px;
+  @include tablet {
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    width: 340px;
+    margin-bottom: 12px;
+  }
+  @include desktop {
+    width: 474px;
+    font-size: 30px;
+    line-height: 1.13;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+}
+.footer-text-pink {
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent-color);
+  width: 200px;
+  margin-right: auto;
+  margin-bottom: 40px;
+  @include tablet {
+    width: 340px;
+    font-size: 48px;
+    line-height: 1.14;
+    letter-spacing: 0.06em;
+  }
+  @include desktop {
+    width: 474px;
+    font-size: 57px;
+    line-height: 1.13;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+}
+.footer-link {
+  @include tablet {
+    margin-top: 60px;
+  }
+  @include desktop {
+    margin-top: 12px;
+  }
+}
+.footer-icon-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 28px;
+  margin-left: auto;
+  margin-bottom: 40px;
+  width: 152px;
+  @include tablet {
+    width: 162px;
+    gap: 30px;
+    margin-right: 16px;
+    margin-left: 234px;
+  }
+  @include desktop {
+    margin-left: 532px;
+  }
+}
+.footer-contact {
+  width: 230px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.83;
+  text-align: right;
+  margin-left: auto;
+  margin-bottom: 40px;
+  @include tablet {
+    margin-left: 128px;
+    font-size: 14px;
+    line-height: 1.85;
+    width: 268px;
+  }
+  @include desktop {
+    width: 319px;
+    margin-left: 375px;
+  }
+}
+.footer-contact-tel {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.footer-reserv {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--dark-pink-color);
+  &::before {
+    display: block;
+    margin-bottom: 16px;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #e1e1e1;
+  }
+}
+.footer-reserv-brake {
+  @include tablet {
+    display: none;
+  }
+}
